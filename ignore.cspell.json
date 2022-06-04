@@ -1,0 +1,37 @@
+// cSpell Settings
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  // words - list of words to be always considered correct
+  "words": [
+    "gasleft",
+    "solidstate",
+    "IERC",
+    "Cronos",
+    "cronosnode",
+    "Witnet",
+    "dewhitelist",
+    "Charsets",
+    "Autocompound",
+    "hijackable",
+    "Multicall",
+    "mload",
+    "blockto",
+    "curr",
+    "retval",
+    "Reentrancy",
+    "tokenomics",
+    "keccak",
+    "Dapphub",
+    "bytecode",
+    "multicall",
+    "Chiru",
+    "uids",
+    "struct",
+    "IWETH",
+    "overriden",
+    "Hijackable"
+  ]
+}
