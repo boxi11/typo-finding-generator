@@ -9,7 +9,7 @@ import re
 import copy
 
 local_dirname = os.path.dirname(__file__)
-acct_dirname = "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode"
+ext = "sol"
 
 
 class Location:
@@ -19,7 +19,7 @@ class Location:
 
 
 def execute_cspell(path):
-    path = path + "/**/*.sol"
+    path = path + "/**/*." + ext
     # print(path)
     process_cspell = subprocess.run(
         [
@@ -62,16 +62,16 @@ def generate_acct_json(text):
     typo_set = set()
 
     for line in text:
-        sol_file, sol_line, word = line.split(":")
+        contract_file, contract_line, word = line.split(":")
 
-        sol_file = re.sub((local_dirname) + r'(.*\.sol)',
-                          (acct_dirname) + r'\1', sol_file)
+        contract_file = re.sub((local_dirname) + r'(.*\.{0})'.format(ext),
+                               (acct_dirname) + r'\1', contract_file)
         word = re.search(r'\((.*)\)', word)
 
         location = copy.deepcopy(location_template)
-        location['file'] = sol_file
-        location['start']['line'] = sol_line
-        location['end']['line'] = int(sol_line) + 1
+        location['file'] = contract_file
+        location['start']['line'] = contract_line
+        location['end']['line'] = int(contract_line) + 1
 
         typo_set.add(word.group(1))
         # print(word.group(1))
