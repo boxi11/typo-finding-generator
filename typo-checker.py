@@ -8,8 +8,12 @@ from collections import defaultdict
 import re
 import copy
 
+# variables need to be configured before running
+acct_dirname = "$/github.com/CertiKProject/certik-audit-projects/tree/41bfd7b179417ad851abc541bf92635e9972c393/projects/algofi"
+ext = "py"
+sort = True
+
 local_dirname = os.path.dirname(__file__)
-ext = "sol"
 
 
 class Location:
@@ -78,6 +82,9 @@ def generate_acct_json(text):
 
         if not is_duplicated(finding['locations'], location):
             finding['locations'].append(location)
+
+    if sort:
+        typo_set = sorted(typo_set)
 
     typo_str = '\n - '.join(str(s) for s in typo_set)
 
