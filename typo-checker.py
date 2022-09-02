@@ -86,6 +86,9 @@ def generate_acct_json(text):
     if sort:
         typo_set = sorted(typo_set)
 
+    # print for easier checking/adding false positives (project level terms)
+    print(typo_set)
+
     typo_str = '\n - '.join(str(s) for s in typo_set)
 
     finding['description'] += typo_str
