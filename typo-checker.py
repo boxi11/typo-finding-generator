@@ -12,6 +12,7 @@ import copy
 acct_dirname = "$/github.com/CertiKProject/certik-audit-projects/tree/41bfd7b179417ad851abc541bf92635e9972c393/projects/algofi"
 ext = "py"
 sort = True
+pid = "e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5"
 
 local_dirname = os.path.dirname(__file__)
 
@@ -49,7 +50,15 @@ def generate_acct_json(text):
         "confidence": "high",
         "description": "There are several typos in the contracts, please see the above to find the locations, and the word with typos are listed here:\n - ",
         "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open source purposes",
-        "status": "pending"
+        "status": "pending",
+        "origin": {
+            "type": "paste",
+            "fid": "11",  # origin of fid doesnt really exist
+            "pid": str(pid),
+            "origin": {
+                "type": "manual"
+            }
+        }
     }
     location_template = {
         "start": {
@@ -74,8 +83,10 @@ def generate_acct_json(text):
 
         location = copy.deepcopy(location_template)
         location['file'] = contract_file
-        location['start']['line'] = contract_line
+        location['start']['line'] = int(contract_line)
+        location['start']['column'] = 1
         location['end']['line'] = int(contract_line) + 1
+        location['end']['column'] = 1
 
         typo_set.add(word.group(1))
         # print(word.group(1))
