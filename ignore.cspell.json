@@ -1,37 +1,67 @@
 // cSpell Settings
 {
-  // Version of the setting file.  Always 0.2
+  // version of the setting file.  Always 0.2
+  // should be always 0.2
   "version": "0.2",
+
   // language - current active spelling language
   "language": "en",
+
+  // ignorePaths - path to be ignored, can be relative or absolute
+  // relative path is relative to the current json file
+  "ignorePaths": ["./TestContracts/", "./Interfaces/", "./Dependencies/"],
+
   // words - list of words to be always considered correct
+  // case insensitive
   "words": [
+    //general dictionary
     "gasleft",
     "solidstate",
     "IERC",
-    "Cronos",
-    "cronosnode",
-    "Witnet",
-    "dewhitelist",
-    "Charsets",
-    "Autocompound",
-    "hijackable",
-    "Multicall",
+    "IETH",
+    "ETHUSD",
+    "abicoder",
+    "chainid",
+    "SLOAD",
+    "multicall",
     "mload",
-    "blockto",
     "curr",
     "retval",
-    "Reentrancy",
+    "reentrancy",
     "tokenomics",
     "keccak",
-    "Dapphub",
     "bytecode",
     "multicall",
-    "Chiru",
     "uids",
     "struct",
-    "IWETH",
+    "structs",
     "overriden",
-    "Hijackable"
+    "Hijackable",
+    "merkle",
+    "PSR's",
+    "pubkey",
+    "TWAP",
+    "TYPEHASH",
+    "Tellor",
+    "UNISWAPV",
+    "UUPS",
+    "proxying",
+    "proxied",
+    "topup",
+    "staker",
+    "staked",
+    "staking",
+    "unstake",
+    "unstaked",
+    "unstaking",
+    "hijackable",
+
+    //project dictionary
+    "Fintrux",
+    "FETH",
+    "IFETH",
+    "PAYD",
+    "IPAYD",
+    "DAMOUNT"
   ]
 }
