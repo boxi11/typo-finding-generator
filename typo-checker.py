@@ -10,7 +10,7 @@ import copy
 
 # variables need to be configured before running
 acct_dirname = "$/github.com/CertiKProject/certik-audit-projects/tree/41bfd7b179417ad851abc541bf92635e9972c393/projects/algofi"
-ext = "py"
+ext = "sol"
 sort = True
 pid = "e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5"
 
@@ -123,4 +123,7 @@ def main(argv):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 1:
+        print("Error: Path argument is missing. Please provide the path to the directory containing the files to check for typos.")
+        sys.exit(1)
     main(sys.argv[1:])
