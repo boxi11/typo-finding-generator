@@ -24,6 +24,7 @@
     "chainid",
     "SLOAD",
     "multicall",
+    "staticcall"
     "mload",
     "curr",
     "retval",
@@ -55,6 +56,13 @@
     "unstaked",
     "unstaking",
     "hijackable",
+    "delegatecall",
+    "mstore",
+    "mulmod",
+    "muldiv",
+    "extcodecopy",
+    "returndatacopy",
+    "returndatasize",
 
     //project dictionary
     "Fintrux",

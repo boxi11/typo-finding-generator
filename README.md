@@ -6,7 +6,8 @@ cSpell
 
 ## How to
 1. Copy `typo-checker.py` and `ignore.cspell.json` to the working directory.
-2. Add the false-positive words to `ignore.cspell.json`. (You can also do it after run it once)
+2. Add the false-positive words to `ignore.cspell.json`. 
+   1. The list of typos will print out in the terminal, such that you can review and adjust the words in `ignore.cspell.json`.
 3. Change the `acct_dirname` in `typo-checker.py` to have the correct file locations.
 4. Change the `ext` in `typo-checker.py` to have the correct file extensions. e.g. "sol" for Solidity, "rs" for Rust, etc.
 5. Change the `pid` in in `typo-checker.py` to have the correct project ID. `pid` can be found at the acct url. e.g. https://acc.audit.certikpowered.info/project/e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5
