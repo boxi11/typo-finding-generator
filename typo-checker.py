@@ -53,7 +53,7 @@ def generate_acct_json(text):
         "status": "pending",
         "origin": {
             "type": "paste",
-            "fid": "11",  # origin of fid doesnt really exist
+            "fid": "11",  # origin of fid doesn't really exist
             "pid": str(pid),
             "origin": {
                 "type": "manual"
@@ -124,6 +124,6 @@ def main(argv):
 
 if __name__ == "__main__":
     if len(sys.argv) < 1:
-        print("Error: Path argument is missing. Please provide the path to the directory containing the files to check for typos.")
+        print("Usage: python3 typo-checker.py <path>")
         sys.exit(1)
     main(sys.argv[1:])
