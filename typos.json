@@ -1,1 +1,111 @@
-{"title": "Typos in Comments and Codes", "type": "finding", "locations": [{"start": {"line": "11", "column": 0}, "end": {"line": 12, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/maintenance/MaintenanceFacet.sol"}, {"start": {"line": "10", "column": 0}, "end": {"line": 11, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/maintenance/MaintenanceGovernanceFacet.sol"}, {"start": {"line": "51", "column": 0}, "end": {"line": 52, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/node/NodeGovernanceFacet.sol"}, {"start": {"line": "60", "column": 0}, "end": {"line": 61, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/node/NodeGovernanceFacet.sol"}, {"start": {"line": "14", "column": 0}, "end": {"line": 15, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/shareholding/ShareholdingFacet.sol"}, {"start": {"line": "21", "column": 0}, "end": {"line": 22, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/shareholding/ShareholdingFacet.sol"}, {"start": {"line": "10", "column": 0}, "end": {"line": 11, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/libraries/Errors.sol"}, {"start": {"line": "8", "column": 0}, "end": {"line": 9, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/Roles.sol"}, {"start": {"line": "67", "column": 0}, "end": {"line": 68, "column": 0}, "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/upgradeInitializers/DiamondInit.sol"}], "category": ["coding-style"], "severity": "info", "confidence": "high", "description": "There are several typos in the contracts, please see the above to find the locations, and the word with typos are listed here:\n - meintenance\n - penatly\n - recieve\n - walet\n - cooresponding\n - attmepting\n - maintenace\n - priviledged", "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open source purposes", "status": "pending"}
+{
+  "title": "Typos in Comments and Codes",
+  "type": "finding",
+  "locations": [
+    {
+      "start": {
+        "line": "11",
+        "column": 0
+      },
+      "end": {
+        "line": 12,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/maintenance/MaintenanceFacet.sol"
+    },
+    {
+      "start": {
+        "line": "10",
+        "column": 0
+      },
+      "end": {
+        "line": 11,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/maintenance/MaintenanceGovernanceFacet.sol"
+    },
+    {
+      "start": {
+        "line": "51",
+        "column": 0
+      },
+      "end": {
+        "line": 52,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/node/NodeGovernanceFacet.sol"
+    },
+    {
+      "start": {
+        "line": "60",
+        "column": 0
+      },
+      "end": {
+        "line": 61,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/node/NodeGovernanceFacet.sol"
+    },
+    {
+      "start": {
+        "line": "14",
+        "column": 0
+      },
+      "end": {
+        "line": 15,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/shareholding/ShareholdingFacet.sol"
+    },
+    {
+      "start": {
+        "line": "21",
+        "column": 0
+      },
+      "end": {
+        "line": 22,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/facets/shareholding/ShareholdingFacet.sol"
+    },
+    {
+      "start": {
+        "line": "10",
+        "column": 0
+      },
+      "end": {
+        "line": 11,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/libraries/Errors.sol"
+    },
+    {
+      "start": {
+        "line": "8",
+        "column": 0
+      },
+      "end": {
+        "line": 9,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/Roles.sol"
+    },
+    {
+      "start": {
+        "line": "67",
+        "column": 0
+      },
+      "end": {
+        "line": 68,
+        "column": 0
+      },
+      "file": "$/github/CertiKProject/certik-audit-projects/fbb54459285dbc23a38120621531f28d5b33d1e5/projects/cronosnode/contracts/upgradeInitializers/DiamondInit.sol"
+    }
+  ],
+  "category": ["coding-style"],
+  "severity": "info",
+  "confidence": "high",
+  "description": "There are several typos in the contracts, please see the above to find the locations, and the word with typos are listed here:\n - meintenance\n - penatly\n - recieve\n - walet\n - cooresponding\n - attmepting\n - maintenace\n - priviledged",
+  "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open source purposes",
+  "status": "pending"
+}

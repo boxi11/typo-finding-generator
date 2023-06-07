@@ -14,8 +14,6 @@ ext = "sol"
 sort = True
 pid = "e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5"
 
-local_dirname = os.path.dirname(__file__)
-
 
 class Location:
     def toJSON(self):
@@ -31,11 +29,24 @@ def execute_cspell(path):
             "cspell",
             path,
             "--config",
-            "ignore.cspell.json"
+            "cspell.config.yaml"
         ],
         capture_output=True
     )
     return process_cspell.stdout.decode("utf-8").splitlines()
+
+
+def handle_special_char(string):
+
+    string = string.replace("[", "\[")
+    string = string.replace("]", "\]")
+    string = string.replace("-", "\-")
+    string = string.replace("(", "\(")
+    string = string.replace(")", "\)")
+    string = string.replace("{", "\{")
+    string = string.replace("}", "\}")
+
+    return string
 
 
 def generate_acct_json(text):
@@ -74,8 +85,17 @@ def generate_acct_json(text):
 
     typo_set = set()
 
+    # get local directory to be replaced with accelerator directory
+    local_dirname = os.path.dirname(__file__)
+    local_dirname = handle_special_char(local_dirname)
+
     for line in text:
         contract_file, contract_line, word = line.split(":")
+
+        print(local_dirname)
+        print(line)
+        print(re.search((local_dirname) +
+              r'(.*\.{0})'.format(ext), contract_file))
 
         contract_file = re.sub((local_dirname) + r'(.*\.{0})'.format(ext),
                                (acct_dirname) + r'\1', contract_file)
