@@ -14,6 +14,7 @@ Python 3.10.9
    1. The list of typos will print out in the terminal, such that you can review and adjust the words in `project-words.txt`.
    2. Words in `project-words.txt` should be separated by newline, and the characters are case-insensitive.
 3. Change the `acct_dirname` in `typo-checker.py` to have the correct file locations.
+   1. An easy way to find a valid `acct_dirname` is to copy the locations from a finding of the working project in the accelerator.
 4. Change the `ext` in `typo-checker.py` to have the correct file extensions. e.g. "sol" for Solidity, "rs" for Rust, etc.
 5. Change the `pid` in in `typo-checker.py` to have the correct project ID. `pid` can be found at the acct url. e.g. The `pid` of the project with link of `https://acc.audit.certikpowered.info/project/e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5` is `e0a5c3c0-0ae2-11ed-bdc5-fff6beacf5a5`.
 6. Run `python3 typo-checker.py <contract-path>`.

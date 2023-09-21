@@ -63,12 +63,7 @@ def generate_acct_json(text):
         "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open source purposes",
         "status": "pending",
         "origin": {
-            "type": "paste",
-            "fid": "11",  # origin of fid doesn't really exist
-            "pid": str(pid),
-            "origin": {
-                "type": "manual"
-            }
+            "type": "manual"
         }
     }
     location_template = {
