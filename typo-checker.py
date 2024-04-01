@@ -38,13 +38,13 @@ def execute_cspell(path):
 
 def handle_special_char(string):
 
-    string = string.replace("[", "\[")
-    string = string.replace("]", "\]")
-    string = string.replace("-", "\-")
-    string = string.replace("(", "\(")
-    string = string.replace(")", "\)")
-    string = string.replace("{", "\{")
-    string = string.replace("}", "\}")
+    string = string.replace("[", r"\[")
+    string = string.replace("]", r"\]")
+    string = string.replace("-", r"\-")
+    string = string.replace("(", r"\(")
+    string = string.replace(")", r"\)")
+    string = string.replace("{", r"\{")
+    string = string.replace("}", r"\}")
 
     return string
 
