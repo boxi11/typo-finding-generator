@@ -60,7 +60,7 @@ def generate_acct_json(text):
         "severity": "info",
         "confidence": "high",
         "description": "There are several typos in the contracts, please see the locations above, where the words with typos are listed:\n - ",
-        "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open source purposes",
+        "recommendation": "Recommend correcting all of the typos in the contracts to provide better readability for open-source purposes.",
         "status": "pending",
         "origin": {
             "type": "manual"
